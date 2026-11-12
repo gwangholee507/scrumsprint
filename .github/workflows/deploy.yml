@@ -28,7 +28,7 @@ jobs:
             options:
               env:
                 - name: DB_URL
-                  value: mongodb+srv://<user>:<password>@database1.winwah5.mongodb.net/?retryWrites=true&w=majority
+                  value: ${{ secrets.DB_URL }}
                 - name: PORT
                   value: "8080"
               ports: "8080"
